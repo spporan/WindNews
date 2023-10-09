@@ -1,11 +1,13 @@
 package com.windnews.data.model
 import androidx.annotation.Keep
+import androidx.room.Entity
 import com.google.gson.annotations.SerializedName
 
 /**
  * Article is data class which serialize from api  and  local data source
  */
 @Keep
+@Entity(tableName = "news_articles")
 data class Article(
     @SerializedName("author")
     val author: String,
