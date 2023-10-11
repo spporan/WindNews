@@ -29,12 +29,16 @@ This sample app implements MVVM architecture using hilt, Room, Paging3, and Retr
 # Screenshots
 
 <p align="center">
-<img src="https://github.com/spporan/WindNews/blob/master/screenshots/Screenshot_1.jpg" alt="drawing" width="230px"/> 
-<img src="screenshots/wind_news.gif" alt="drawing" width="230px" hspace="30"/>  
+<img src="screenshots/img_list.png" alt="drawing" width="230px" hspace="30"/>
+<img src="screenshots/img_details.png" alt="drawing" width="230px" hspace="30"/>
+<img src="screenshots/img_webview.png" alt="drawing" width="230px" hspace="30"/>
+
+<img src="screenshots/wind_news.gif" alt="drawing" width="230px" hspace="30"/> 
+
 </p>
 
 # APK Download
-[Download APK](https://github.com/spporan/WindNews/blob/master/apk/app-debug.apk)
+[Download APK](apk/app-debug.apk)
 
 ### How to run the project:
 
