@@ -3,7 +3,6 @@ package com.windnews.data.repository.repoImpl
 import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import androidx.paging.PagingData
-import com.windnews.data.model.Article
 import com.windnews.data.repository.NewsListRepository
 import com.windnews.data.source.paging.NewsListPagingSource
 import com.windnews.ui.uistates.NewsListUiState

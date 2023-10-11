@@ -1,6 +1,5 @@
 package com.windnews.ui.adapters.viewholders
 
-import android.view.View
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.windnews.databinding.NewsItemViewBinding

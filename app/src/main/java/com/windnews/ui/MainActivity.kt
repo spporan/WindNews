@@ -1,12 +1,10 @@
 package com.windnews.ui
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.activity.viewModels
+import androidx.appcompat.app.AppCompatActivity
 import com.windnews.R
 import com.windnews.databinding.ActivityMainBinding
 import com.windnews.ui.fragments.SplashFragment
-import com.windnews.ui.viewmodels.NewsListViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

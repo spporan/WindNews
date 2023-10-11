@@ -3,15 +3,12 @@ package com.windnews.data.source.paging
 import android.util.Log
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
-import com.windnews.data.model.Article
 import com.windnews.data.source.remote.NewsListRemoteDataSource
 import com.windnews.data.utils.getFormattedDateTime
-import com.windnews.data.utils.toDateTime
 import com.windnews.ui.uistates.NewsListUiState
 import retrofit2.HttpException
 import java.io.IOException
 import javax.inject.Inject
-import javax.inject.Named
 
 class NewsListPagingSource @Inject constructor(
      private val newsListRemoteDataSource: NewsListRemoteDataSource,
