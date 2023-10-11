@@ -8,7 +8,7 @@ interface NewsApiService {
     /**
      * Get news list from remote service by paginated way.
      */
-    @GET("/everything?q=usdc&sortBy=publishedAt")
+    @GET("everything?q=usdc&sortBy=publishedAt")
     suspend fun getListOfNews(
         @Query("apiKey") apiKey: String,
         @Query("page") page: Int,
