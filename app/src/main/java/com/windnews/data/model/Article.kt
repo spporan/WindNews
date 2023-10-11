@@ -1,13 +1,14 @@
 package com.windnews.data.model
+import android.os.Parcelable
 import androidx.annotation.Keep
-import androidx.room.Entity
 import com.google.gson.annotations.SerializedName
+import kotlinx.parcelize.Parcelize
 
 /**
  * Article is data class which serialize from api  and  local data source
  */
 @Keep
-@Entity(tableName = "news_articles")
+@Parcelize
 data class Article(
     @SerializedName("author")
     val author: String,
@@ -25,4 +26,4 @@ data class Article(
     val url: String,
     @SerializedName("urlToImage")
     val urlToImage: String
-)
+): Parcelable
