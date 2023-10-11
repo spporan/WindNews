@@ -1,5 +1,7 @@
 package com.windnews.di
 
+import com.windnews.BuildConfig
+import com.windnews.BuildConfig.DEBUG
 import com.windnews.data.source.remote.api.NewsApiService
 import dagger.Module
 import dagger.Provides
@@ -11,6 +13,7 @@ import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
+import javax.inject.Named
 import javax.inject.Singleton
 
 @Module
@@ -31,11 +34,18 @@ object NetworkModule {
         return OkHttpClient.Builder()
             .readTimeout(20, TimeUnit.SECONDS)
             .apply {
-                if (BuildConfig.DEBUG)
+                if (DEBUG)
                     addInterceptor(logger)
             }
             .connectTimeout(20, TimeUnit.SECONDS)
             .build()
+    }
+
+    @Provides
+    @Singleton
+    @Named("api_key")
+    fun provideApiKey(): String {
+        return BuildConfig.API_KEY
     }
 
     @Provides
