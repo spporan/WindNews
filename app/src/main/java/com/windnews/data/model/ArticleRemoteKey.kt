@@ -7,6 +7,7 @@ import androidx.room.PrimaryKey
 /**
  * ArticleRemoteKey will represent paging key table for paging 3
  */
+/*
 @Keep
 @Entity(tableName = "article_remote_keys")
 data class ArticleRemoteKey(
@@ -15,4 +16,4 @@ data class ArticleRemoteKey(
     val prevPage: Int?,
     val nextPage: Int?,
     val lastUpdateTime: Long = 0
-)
+)*/

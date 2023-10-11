@@ -1,5 +1,6 @@
 package com.windnews.data.source.local.database
 
+/*
 import androidx.room.Database
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
@@ -10,7 +11,6 @@ import com.windnews.data.source.local.database.dao.ArticleDao
 import com.windnews.data.source.local.database.dao.ArticleRemoteKeyDao
 
 @Database(entities = [
-    Article::class,
     ArticleRemoteKey::class
 ], version = 1, exportSchema = false)
 @TypeConverters(TypeConverter::class)
@@ -23,4 +23,4 @@ abstract class NewsDatabase: RoomDatabase() {
     companion object {
         const val DATABASE_NAME = "news_database"
     }
-}
+}*/

@@ -1,5 +1,6 @@
 package com.windnews.di
 
+/*
 import android.app.Application
 import androidx.room.Room
 import com.windnews.data.source.local.database.NewsDatabase
@@ -25,4 +26,4 @@ object NewsDatabaseModule {
 
     @Provides
     fun provideArticleRemoteKeyDao(db: NewsDatabase): ArticleRemoteKeyDao = db.remoteKeyDao()
-}
+}*/
